@@ -1,0 +1,105 @@
+
+.add-store-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.add-store-card {
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.add-store-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.add-store-header h2 {
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.add-store-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.add-store-card button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #0284c7;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-store-card button:hover {
+    background: #0369a1;
+}
+
+.add-store-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.success-message {
+    color: #15803d;
+    font-size: 14px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 22px;
+    text-align: center;
+    color: #0284c7;
+    text-decoration: none;
+}

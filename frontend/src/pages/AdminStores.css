@@ -1,0 +1,170 @@
+
+.admin-stores-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.stores-sidebar {
+    width: 245px;
+    flex-shrink: 0;
+    background: #111827;
+    color: white;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.stores-sidebar h2 {
+    color: #38bdf8;
+    margin: 0 0 15px;
+}
+
+.stores-sidebar-label {
+    color: #94a3b8;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.stores-sidebar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.stores-sidebar a:hover,
+.stores-sidebar a.active {
+    background: #1e40af;
+    color: white;
+}
+
+.stores-main {
+    flex: 1;
+    min-width: 0;
+    padding: 32px;
+}
+
+.stores-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stores-header h1 {
+    color: #172554;
+    margin: 0 0 8px;
+}
+
+.stores-header p {
+    color: #64748b;
+}
+
+.add-store-button {
+    background: #2563eb;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.stores-content {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stores-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.stores-toolbar input,
+.stores-toolbar select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.stores-toolbar input {
+    flex: 1;
+    min-width: 220px;
+}
+
+.stores-toolbar button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.stores-table-scroll {
+    overflow-x: auto;
+}
+
+.stores-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.stores-table th {
+    background: #f1f5f9;
+    color: #334155;
+    padding: 15px;
+}
+
+.stores-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.stores-table tr:hover {
+    background: #f8fafc;
+}
+
+.stores-message,
+.stores-error {
+    text-align: center;
+    padding: 25px;
+}
+
+.stores-error {
+    color: #dc2626;
+}
+
+.stores-count {
+    color: #64748b;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .admin-stores-layout {
+        flex-direction: column;
+    }
+
+    .stores-sidebar {
+        width: auto;
+    }
+
+    .stores-main {
+        padding: 16px;
+    }
+
+    .stores-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

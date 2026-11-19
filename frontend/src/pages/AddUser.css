@@ -1,0 +1,110 @@
+
+.add-user-page {
+    min-height: 100vh;
+    background: #f4f7fb;
+    padding: 35px;
+    font-family: Arial, sans-serif;
+}
+
+.add-user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.add-user-header h1 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.add-user-header p {
+    color: #64748b;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.add-user-card {
+    background: white;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #334155;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-group small {
+    color: #64748b;
+}
+
+.add-user-card button {
+    width: 100%;
+    padding: 13px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-user-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-error {
+    color: #dc2626;
+}
+
+.form-success {
+    color: #15803d;
+}
+
+@media (max-width: 600px) {
+    .add-user-page {
+        padding: 18px;
+    }
+
+    .add-user-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .add-user-card {
+        padding: 20px;
+    }
+}
